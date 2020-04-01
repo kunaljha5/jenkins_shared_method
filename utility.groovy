@@ -1,16 +1,3 @@
-if [ ! -z $Stage ]; then
-echo $Stage
-else
-  case "$Environment" in
-    *"dev-"* ) echo "Dev" ;; 
-    "dev.example.com" ) echo "dev-example-01" ;; 
-    *"test-"* ) echo "Test" ;;
-    "prod.example.com" ) echo "prod-example-01" ;;
-    * ) echo "FAILED" ;; 
-  esac
-fi
-
-
 def getEnv (stage, environment){
     if(stage){
         println(stage)
