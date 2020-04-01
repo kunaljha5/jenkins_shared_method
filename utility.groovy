@@ -28,7 +28,7 @@ def getEnv (stage, environment){
     }
 }
 
-setupHelm(helmVersion) {
+def setupHelm (helmVersion) {
     if(helmVersion) {
         sh(returnStdout: true,
            script: """
