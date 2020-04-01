@@ -1,4 +1,9 @@
 def getEnv (stage, environment){
+    //a="dev-med"
+    //a="dev.example.com"
+    //a="prod.example.com"
+    //a=getEnv("", a)
+    //println(a)
     if(stage){
         println(stage)
     }
